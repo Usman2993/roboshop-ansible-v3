@@ -9,12 +9,12 @@
 # shipping_db_user: "{{ vault_shipping_db_user }}"
 # shipping_db_password: "{{ vault_shipping_db_password }}"
 
-mongodb_host: mongodb.usdaws92s.store
-redis_host: redis.usdaws92s.store
-mysql_host: mysql.usdaws92s.store
-rabbitmq_host: rabbitmq.usdaws92s.store
-catalogue_host: catalogue.usdaws92s.store
-user_host: user.usdaws92s.store
-cart_host: cart.usdaws92s.store
-shipping_host: shipping.usdaws92s.store
-payment_host: payment.usdaws92s.store
+mongodb_host: mongodb-{{ env }}-{{ env }}.usdaws92s.store
+redis_host: redis-{{ env }}.usdaws92s.store
+mysql_host: mysql-{{ env }}.usdaws92s.store
+rabbitmq_host: rabbitmq-{{ env }}.usdaws92s.store
+catalogue_host: catalogue-{{ env }}.usdaws92s.store
+user_host: user-{{ env }}.usdaws92s.store
+cart_host: cart-{{ env }}.usdaws92s.store
+shipping_host: shipping-{{ env }}.usdaws92s.store
+payment_host: payment-{{ env }}.usdaws92s.store
